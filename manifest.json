@@ -1,0 +1,15 @@
+{
+  "action": { "default_popup": "src/popup/index.html" },
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "js": ["src/content/index.ts"],
+      "matches": ["https://*.youtube.com/*"]
+    }
+  ],
+  "description": "Extension to speed up videos browser wide",
+  "manifest_version": 3,
+  "name": "Speedplay",
+  "permissions": ["storage"],
+  "version": "0.0.1"
+}
